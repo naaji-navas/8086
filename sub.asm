@@ -26,9 +26,8 @@ start:
     call print
     call read
     mov num2,al
-    sub al,num1
+    sub num1,al
     mov difference,al
-
     mov ah,0h
     aas
     add ah,30h
@@ -43,7 +42,7 @@ start:
     mov dl,bl
     int 21h
 
-    mov ah,4ch
+    mov ah,40h
     int 21h
     
     print:
